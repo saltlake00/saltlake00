@@ -6,7 +6,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00e87a&center=true&vCenter=true&width=640&lines=Shipping%20web%20products%20with%20care;Open%20to%20thoughtful%20collaboration)](https://git.io/typing-svg)
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:saltlake5470@gmail.com) [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=googlechrome&logoColor=white)](https://saltlake1.tistory.com/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:saltlake5470@gmail.com) [![Blog](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=googlechrome&logoColor=white)](https://saltlake1.tistory.com/)
 
 ![Open to work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20work-00e87a?style=flat-square)
 
