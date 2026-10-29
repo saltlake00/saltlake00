@@ -1,49 +1,31 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00e87a,100:007a3d&height=240&section=header&text=KIM%20SEONGHUN&fontSize=68&fontColor=ffffff&fontAlignY=38&fontStyle=bold&desc=Full-Stack%20Developer&descSize=20&descAlignY=58&descColor=ffffffaa&animation=fadeIn&stroke=ffffff&strokeWidth=2" width="100%" alt="KIM SEONGHUN banner"/>
-</div>
+# 김성훈 · Unity 게임 클라이언트 개발
 
-<div align="center">
+Unity 6와 C#으로 입력·전투 판정·보스 패턴을 설계하고, 성능 병목은 측정해서 고치는 개발자입니다.
+한 달간 1인 개발한 3인칭 마법 액션 게임으로 구조 분리, 상태 기계, 렌더링 최적화, 버그 추적을 정리했습니다.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00e87a&center=true&vCenter=true&width=640&lines=Shipping%20web%20products%20with%20care;Open%20to%20thoughtful%20collaboration)](https://git.io/typing-svg)
+## 대표 프로젝트: Wild Arcana
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:saltlake5470@gmail.com) [![Blog](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=googlechrome&logoColor=white)](https://saltlake1.tistory.com/)
+Unity 6 3인칭 마법 액션 보스 러쉬 (PC 키보드·마우스) · 2026-09-29 ~ 10-27 1인 개발
 
-![Open to work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20work-00e87a?style=flat-square)
+| 사례 | 내용 | 결과 |
+|---|---|---|
+| 입력 우선순위 중재와 조준 보정 | 겹치는 입력 4종을 순수 C# 중재자 한 곳에서 결정 | 조준 보정 원뿔 12° → 6° |
+| 주문 판정·표시 분리 | 판정은 한 번, 탄·피해 숫자·아이콘은 결과를 구독. 발사 시점 값 고정 | 판정 1 : 표시 N 구조 |
+| 보스 패턴 상태 기계 | 2페이즈 순환, 같은 패턴은 최대 2연속 | 한 순환 9.5초 → 6.9초 |
+| 필드 원경 렌더링 최적화 | 나무를 그루당 드로우에서 인스턴싱으로 교체 | 77.8ms → 9.5ms |
+| 셰이더 NaN 흰 화면 추적 | 실행 파일에서만 화면이 하얗게 날아감. `pow` 음수 입력의 NaN이 블룸으로 번진 것을 찾아 수정 | `saturate` 한 줄 |
 
-</div>
+- 입력·주문 판정·보스 순환을 엔진 참조 없는 순수 C#으로 분리하고 시험으로 검증
+- 어셈블리 36개 중 17개가 엔진 참조 없는 순수 C#
+- 기획·설계안 선택·합격 판정은 직접 하고, 계획과 구현은 Claude(조율)·Codex(구현) 작업 흐름을 설계해 운영
 
-### About
+성능 수치 기준: 노트북 i5-13420H · RTX 4050, 1080p
 
-I build reliable products end to end, with a strong bias for maintainable systems and polished developer experience.
+## 기술 스택
 
-- ⌖ **Location** · Korea
-- ◎ **Education** · NBC UE Track, NCAI
-- ⟳ **Learning** · UnrealEngine, Unity, and better DX tooling
+Unity 6 · C# · URP · Input System · Compute Shader · ScriptableObject · Unity Test Framework
 
-### Stack
+## 연락처
 
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=cpp,cs&theme=dark" alt="Languages"/>
-
-**Custom**
-
-![UnrealEngine](https://img.shields.io/badge/UnrealEngine-111827?style=for-the-badge)
-
-### GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=saltlake00&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="KIM SEONGHUN stats"/> <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saltlake00&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="KIM SEONGHUN top languages"/>
-
-</div>
-
----
-
-<div align="center">
-
-<sub>Made with <a href="https://lebedevnet.github.io/ReadmeForge/">ReadmeForge</a> · <a href="https://github.com/saltlake00">github.com/saltlake00</a></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00e87a,100:007a3d&height=120&section=footer" width="100%" alt="Footer wave"/>
-
-</div>
+- 이메일: [saltlake5470@gmail.com](mailto:saltlake5470@gmail.com)
+- 블로그: [saltlake1.tistory.com](https://saltlake1.tistory.com/)
